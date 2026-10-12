@@ -22,7 +22,7 @@ class Compte {
 }
 
 void main() {
-  var compte = Compte("C001");
+  Compte compte = Compte("C001", 0.0);
 
   compte.depot(150.0);
 
