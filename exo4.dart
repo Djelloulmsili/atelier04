@@ -29,3 +29,16 @@ class Film extends Media {
     print("Ceci est un Film : $titre, durée : $dureeMinutes minutes.");
   }
 }
+
+void main() {
+  List<Media> catalogue = [
+    Livre("Le Petit Prince", "Antoine de Saint-Exupéry"),
+    Livre("La Coline oubliée", "Moufdi Abbas"),
+    Film("Viking", 180),
+    Film("Prison Break", 176),
+  ];
+
+  for (var media in catalogue) {
+    media.afficherType();
+  }
+}
