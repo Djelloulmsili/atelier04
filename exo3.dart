@@ -20,3 +20,11 @@ class Compte {
     }
   }
 }
+
+void main() {
+  Compte compte = Compte("C001", 0.0);
+
+  compte.depot(150.0);
+
+  print(compte.solde);
+}
